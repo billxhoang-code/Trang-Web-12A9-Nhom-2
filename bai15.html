@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bài 15: Tạo màu cho chữ và nền</h1>
+</header>
+
+<main>
+    <h2>Lý thuyết bài học</h2>
+    <h3>Qua bài học này, học sinh sẽ học cách sử dụng CSS để tạo màu cho chữ và nền, giúp trang web trở nên sinh động và hài hòa hơn.Để rõ hơn, các bạn hãy theo dõi bài giảng sau: </h3>
+
+    <iframe src="https://www.youtube.com/embed/zHPn0yDN_tY"allowfullscreen></iframe>
+    
+    <h2>Bài tập ôn luyện</h2>
+    <p>
+    <h3>Phần trắc nghiệm:</h3>
+Câu 1: Để định dạng màu khung viền quanh phần tử, em sử dụng thuộc tính CSS nào?<br>
+A. background-color.<br>
+B. bgcolor.<br>
+C. color.<br>
+D. border.<br><br>
+
+Câu 2: Mẫu CSS định dạng phần tử h1 có kiểu chữ đậm, màu chữ đỏ và màu nền hồng nhạt là<br>
+A. <img src="FileAnh/15_2A.png" width="40%"><br>
+B. <img src="FileAnh/15_2B.png" width="40%"><br>
+C. <img src="FileAnh/15_2C.png" width="40%"><br>
+D. <img src="FileAnh/15_2D.png" width="40%"><br><br>
+
+Câu 3: Cách thiết lập màu tím trong hệ màu RGB là<br>
+A. 800080.<br>
+B. 808080.<br>
+C. 808000.<br>
+D. 808000.<br><br>
+
+Câu 4: Mẫu CSS áp dụng cho các phần tử có quan hệ cha con trực tiếp là<br>
+A. div p {background-color: lightblue;}<br>
+B. p + em {color: red;}<br>
+C. p &gt; strong {color: green;}<br>
+D. strong&nbsp;&nbsp;em {color: gray;}<br><br>
+
+Câu 5: Hệ màu nào sau đây được HTML và CSS hỗ trợ?<br>
+A. RYB.<br>
+B. HSB.<br>
+C. HSL.<br>
+D. CMYK.<br><br>
+
+Câu 6: Phương án nào sau đây là cách thiết lập màu đen trong hệ màu RGB?<br>
+A. rgb(100%, 100%, 100%).<br>
+B. 808080.<br>
+C. rgb(255, 255, 255).<br>
+D. rgb(0%, 0%, 0%).<br><br>
+
+Câu 7: Sơ đồ dưới đây mô tả bộ chọn nào?<br>
+<img src="FileAnh/15_7_de.png"><br>
+A. E F.<br>
+B. E&nbsp;&nbsp;F.<br>
+C. E &gt; F.<br>
+D. E + F.<br><br>
+
+Câu 8: Thuộc tính nào giúp em tạo hiệu ứng trong suốt cho hình ảnh, phần tử HTML?<br>
+A. background-color.<br>
+B. opacity.<br>
+C. hover.<br>
+D. transparence.<br><br>
+
+Câu 9: Phát biểu nào sau đây đúng?<br>
+A. Các thuộc tính định dạng màu chữ, màu nền và màu khung viền của CSS đều có tính kế thừa.<br>
+B. Mỗi màu trong hệ màu RGB gồm 3 giá trị từ 0 đến 256.<br>
+C. Trong hệ màu HSL, khi độ bão hòa bằng 0% thì màu trở thành xám.<br>
+D. Trong hệ màu RGB có 255 màu xám.<br><br>
+
+Câu 10: Ý nghĩa của bộ chọn E + F là gì?<br>
+A. Quan hệ anh em liền kề, F đứng ngay sau E và cùng cha.<br>
+B. Quan hệ anh em không liền kề.<br>
+C. Quan hệ cha con trực tiếp.<br>
+D. Quan hệ con cháu.<br><br>
+
+Câu 11: Bộ chọn nào áp dụng cho các phần tử F là con/cháu của E?<br>
+A. E&nbsp;&nbsp;F.<br>
+B. E + F.<br>
+C. E F.<br>
+D. E &gt; F.<br><br>
+
+    <h3>Phần tự luận:</h3>
+Bài 1: Các màu cơ bản red, yellow, green, blue, magenta, cyan được thể hiện bằng hàm HSL như thế nào?<br>
+Bài 2: Mỗi giá trị trong hệ màu RGB có thể nhận giá trị nào và tổng số màu có thể tạo ra là bao nhiêu?<br>
+Bài 3: Sự khác biệt giữa RGB và HSL trong CSS là gì?<br>
+Bài 4:<br>
+Câu 1: Ví dụ CSS dùng RGB tạo màu chữ đỏ và nền xanh dương.<br>
+Câu 2: Ví dụ CSS dùng HSL tạo màu chữ xanh lá và nền vàng.<br>
+Câu 3: Áp dụng CSS căn giữa, đổi màu và cỡ chữ cho h1.<br><br>
+    </p>
+    <h2>Trả lời:</h2>
+      <h3>Trắc nghiệm:</h3>
+        <p>1D 2B 3A 4C 5C 6D 7B 8A 9C 10A </p>
+      <h3>Tự luận:</h3>
+      <p>
+<span>Bài 1:</span><br>
+Red: HSL(0, 100%, 50%)<br>
+Yellow: HSL(60, 100%, 50%)<br>
+Green: HSL(120, 100%, 50%)<br>
+Blue: HSL(240, 100%, 50%)<br>
+Magenta: HSL(300, 100%, 50%)<br>
+Cyan: HSL(180, 100%, 50%)<br><br>
+
+<span>Bài 2:</span><br>
+Mỗi giá trị RGB nhận giá trị từ 0 đến 255, tổng số màu là 16.777.216.<br><br>
+
+<span>Bài 3:</span><br>
+RGB mô tả màu bằng ba thành phần đỏ, xanh lá, xanh dương; HSL mô tả màu bằng sắc độ, độ bão hòa và độ sáng.<br><br>
+
+<span>Bài 4:</span><br>
+<b>Câu 1:</b><br>
+p {<br>
+&nbsp;&nbsp;color: green;<br>
+&nbsp;&nbsp;text-indent: 20px;<br>
+}<br><br>
+
+<b>Câu 2:</b><br>
+p {<br>
+&nbsp;&nbsp;color: hsl(120, 100%, 50%);<br>
+&nbsp;&nbsp;background-color: hsl(60, 100%, 50%);<br>
+}<br><br>
+
+<b>Câu 3:</b><br>
+h1 {<br>
+&nbsp;&nbsp;text-align: center;<br>
+&nbsp;&nbsp;color: red;<br>
+&nbsp;&nbsp;font-size: 24px;<br>
+}<br><br>
+
+<span>Bài 5:</span>
+h1 {<br>
+&nbsp;&nbsp;color: red;<br>
+}<br>
+p {<br>
+&nbsp;&nbsp;text-align: left;<br>
+&nbsp;&nbsp;text-indent: 2em;<br>
+&nbsp;&nbsp;line-height: 1.5;<br>
+}
+    </p>
+<h2>Gửi câu hỏi</h2>
+    <form>
+        <input type="text" placeholder="Họ và tên">
+        <input type="text" placeholder="Trường">
+        <textarea rows="4" placeholder="Câu hỏi"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <footer>
+        <a href="index.html">← Quay về trang chủ</a>
+    </footer>
+</main>
+
+</body>
+</html>
+

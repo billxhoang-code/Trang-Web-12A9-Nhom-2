@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bài 12: Tạo biểu mẫu</h1>
+</header>
+
+<main>
+    <h2>Lý thuyết bài học</h2>
+    <h3>Bài học giúp học sinh làm quen với cách tạo biểu mẫu trong HTML, sử dụng các ô nhập liệu để thu thập thông tin từ người dùng. Theo dõi bài giảng sau:</h3>
+
+    <iframe src="https://www.youtube.com/embed/g6mMu-gRPM8"allowfullscreen></iframe>
+    
+    <h2>Bài tập ôn luyện</h2>
+    <h3>Phần trắc nghiệm:</h3>
+    <p>
+1. Trong thẻ &lt;form&gt;, thuộc tính nào dùng để xác định đường dẫn đến nơi xử lý dữ liệu khi người dùng nhấn nút gửi?<br>
+A. target<br>
+B. name<br>
+C. action<br>
+D. method<br><br>
+
+2. Để khi người dùng nháy chuột vào nhãn (label) thì con trỏ chuột tự động nhảy vào ô nhập liệu tương ứng, ta cần liên kết chúng như thế nào?<br>
+A. Đặt thuộc tính for của &lt;label&gt; trùng với id của &lt;input&gt;.<br>
+B. Đặt thuộc tính for của &lt;label&gt; trùng với name của &lt;input&gt;.<br>
+C. Đặt thẻ &lt;input&gt; bao bên ngoài thẻ &lt;label&gt;.<br>
+D. Đặt thuộc tính name của &lt;label&gt; trùng với id của &lt;input&gt;.<br><br>
+
+3. Khi thiết kế biểu mẫu hỏi về "Giới tính" (chỉ được chọn một: Nam hoặc Nữ), loại phần tử nào sau đây là phù hợp nhất?<br>
+A. &lt;input type="radio"&gt;<br>
+B. &lt;input type="checkbox"&gt;<br>
+C. &lt;input type="text"&gt;<br>
+D. &lt;input type="file"&gt;<br><br>
+
+4. Vai trò chính của thuộc tính name trong thẻ &lt;input&gt; khi gửi dữ liệu biểu mẫu đi là gì?<br>
+A. Để tham chiếu tới dữ liệu khi xử lý tại máy chủ.<br>
+B. Để xác định kiểu dữ liệu của ô nhập.<br>
+C. Để hiển thị văn bản gợi ý trong ô nhập liệu.<br>
+D. Để liên kết với thẻ label.<br><br>
+
+5. Đặc điểm nhận dạng của phương thức POST là gì?<br>
+A. Thường dùng để gửi dữ liệu nhạy cảm.<br>
+B. Không giới hạn dung lượng dữ liệu.<br>
+C. Dữ liệu được gửi trong phần thân của HTTP request.<br>
+D. Dữ liệu hiển thị trên thanh địa chỉ URL.<br><br>
+
+6. Trong thẻ &lt;textarea&gt;, hai thuộc tính nào xác định số dòng và số cột hiển thị?<br>
+A. x và y<br>
+B. width và height<br>
+C. rows và cols<br>
+D. size và length<br><br>
+
+7. Phần tử nào cho phép người dùng nhập văn bản trên nhiều dòng?<br>
+A. &lt;textarea&gt;<br>
+B. &lt;label&gt;<br>
+C. &lt;input type="text"&gt;<br>
+D. &lt;select&gt;<br><br>
+
+8. Để tạo nút gửi toàn bộ dữ liệu biểu mẫu đến máy chủ, ta sử dụng input với kiểu nào?<br>
+A. type="send"<br>
+B. type="reset"<br>
+C. type="button"<br>
+D. type="submit"<br><br>
+
+9. Thẻ HTML dùng để định nghĩa một biểu mẫu nhập liệu là thẻ nào?<br>
+A. &lt;form&gt;<br>
+B. &lt;script&gt;<br>
+C. &lt;table&gt;<br>
+D. &lt;input&gt;<br><br>
+
+10. Trường hợp nào BẮT BUỘC nên sử dụng method="POST" thay vì GET?<br>
+A. Tìm kiếm từ khóa.<br>
+B. Chuyển trang xem bài viết.<br>
+C. Nhập mật khẩu hoặc gửi tệp tin.<br>
+D. Lọc sản phẩm.<br><br>
+    <h3>Phần tự luận:</h3>
+    <p>
+Câu 1: Điểm khác biệt giữa radio, checkbox và select là gì<br>
+Câu 2: Hãy viết câu lệnh để thêm một nút có tên “Quên mật khẩu” vào biểu mẫu.<br>
+Câu 3: Tạo một biểu mẫu đăng kí thành viên câu lạc bộ.
+    </p>
+    <h2>Trả lời:</h2>
+    <h3>Trắc nghiệm:</h3>
+    <p>1C 2A 3A 4A 5D 6C 7A 8D 9A 10C </p>
+    <h3>Tự luận:</h3>
+    <p>
+<span>Câu 1:</span><br>
+• radio: một kiểu của phần tử input, chọn một giá trị trong các giá trị có sẵn, radio đi theo nhóm, số lựa chọn ít<br>
+• checkbox: một kiểu của phần tử input, chọn một hoặc nhiều giá trị với mỗi giá trị dưới dạng có/không, các checkbox độc lập với nhau<br>
+• select: phần tử select, chọn một giá trị trong các giá trị có sẵn, số lựa chọn lớn<br><br>
+<span>Câu 2:</span><br>
+&lt;form&gt;<br>
+&lt;!-- Các trường nhập dữ liệu khác trong biểu mẫu --&gt;<br>
+&lt;!-- Nút "Quên mật khẩu" --&gt;<br>
+&lt;button type="button" onclick="forgotPassword()"&gt;Quên mật khẩu&lt;/button&gt;<br>
+&lt;/form&gt;<br><br>
+<span>Câu 3:</span><br>
+<iframe src="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro"></iframe><br>
+<b>Lời giải:</b><br>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+&lt;title&gt;Biểu mẫu đăng ký thành viên&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h2&gt;Đăng ký thành viên&lt;/h2&gt;<br>
+&lt;form action="/submit_registration" method="post"&gt;<br>
+&lt;label for="fullname"&gt;Họ và tên:&lt;/label&gt;&lt;br&gt;<br>
+&lt;input type="text" id="fullname" name="fullname" required&gt;&lt;br&gt;<br>
+&lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;<br>
+&lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;<br>
+&lt;label for="birthdate"&gt;Ngày sinh:&lt;/label&gt;&lt;br&gt;<br>
+&lt;input type="date" id="birthdate" name="birthdate" required&gt;&lt;br&gt;<br>
+&lt;label for="membership"&gt;Loại hình thành viên:&lt;/label&gt;&lt;br&gt;<br>
+&lt;select id="membership" name="membership"&gt;<br>
+&lt;option value="basic"&gt;Thành viên cơ bản&lt;/option&gt;<br>
+&lt;option value="premium"&gt;Thành viên cao cấp&lt;/option&gt;<br>
+&lt;/select&gt;&lt;br&gt;<br>
+&lt;input type="submit" value="Đăng ký"&gt;<br>
+&lt;/form&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</p>
+<h2>Gửi câu hỏi</h2>
+    <form>
+        <input type="text" placeholder="Họ và tên">
+        <input type="text" placeholder="Trường">
+        <textarea rows="4" placeholder="Câu hỏi"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <footer>
+        <a href="index.html">← Quay về trang chủ</a>
+    </footer>
+</main>
+
+</body>
+</html>

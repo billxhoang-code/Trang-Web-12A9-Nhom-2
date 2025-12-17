@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bài 13: Khái niệm, vai trò của CSS</h1>
+</header>
+
+<main>
+    <h2>Lý thuyết bài học</h2>
+    <h3>Trong bài này, học sinh sẽ tìm hiểu khái niệm CSS và vai trò của CSS trong việc định dạng và làm đẹp cho trang web. Các bạn hãy xem video bài giảng sau: </h3>
+
+    <iframe src="https://www.youtube.com/embed/vCUtu7U0EKk"allowfullscreen></iframe>
+    
+    <h2>Bài tập ôn luyện</h2>
+    <p>
+<span>Câu hỏi 1:</span> Ngôn ngữ CSS có phải là HTML không?<br>
+<span>Câu hỏi 2:</span>  Các mẫu định dạng CSS thường được mô tả như thế nào?<br>
+<span>Câu hỏi 3:</span>  Nếu muốn thiết lập CSS để áp dụng cho toàn bộ tệp HTML thì làm cách nào?<br>
+<span>Câu hỏi 4:</span>  Nếu muốn thiết lập CSS để có thể áp dụng đồng thời cho nhiều trang web thì làm cách nào?<br>
+<span>Câu hỏi 5:</span>  Nếu không dùng CSS thì các định dạng của trang web phải thực hiện theo cách nào?<br>
+<span>Câu hỏi 6:</span>  Sử dụng CSS có những ưu điểm gì trong việc định dạng trang web.<br>
+<span>Câu hỏi 7:</span>  Nếu muốn tất cả các đoạn văn bản của trang web có màu xanh (blue) thì cần thiết lập định dạng CSS như thế nào?<br>
+<span>Câu hỏi 8:</span>  Khẳng định "Ngôn ngữ định dạng CSS chính là ngôn ngữ HTML" là đúng hay sai?<br>
+    </p>
+    <h2>Trả lời:</h2>
+      <p>
+<span>Câu 1:</span><br>
+Không, ngôn ngữ CSS không phải là HTML. CSS (Cascading Style Sheets) là một ngôn ngữ độc lập với HTML được sử dụng để định dạng và thiết kế trang web. Trong khi HTML được sử dụng để xây dựng cấu trúc và nội dung của trang web, CSS được sử dụng để điều chỉnh và định dạng giao diện và kiểu dáng của các phần tử HTML trên trang web.
+      </p>
+      <p>
+<span>Câu 2:</span><br>
+Câu trả lời đúng là C. Các mẫu định dạng CSS có thể được viết trên nhiều hàng. Trong thẻ &lt;style&gt; trong phần tử &lt;head&gt; của trang web, bạn có thể viết các quy tắc định dạng CSS trên nhiều dòng để tăng tính rõ ràng và dễ đọc của mã nguồn. Điều này giúp cho việc quản lý và sửa đổi mẫu định dạng trở nên dễ dàng hơn.
+      </p>
+      <p>
+<span>Câu 3:</span><br>
+Để thiết lập CSS để áp dụng cho toàn bộ tệp HTML, em có thể sử dụng cách thiết lập CSS trong (Internal CSS) hoặc cách thiết lập CSS ngoài (External CSS).
+      </p>
+      <p>
+<span>Câu 4:</span><br>
+Sử dụng cách thiết lập CSS ngoài. Em có thể tạo một tệp CSS riêng, chứa các mẫu định dạng CSS, và sau đó liên kết tệp CSS này với các trang web khác nhau bằng cách sử dụng thẻ &lt;link&gt; hoặc lệnh @import trong phần tử &lt;head&gt; của trang web. Điều này giúp áp dụng đồng thời các mẫu định dạng CSS cho nhiều trang web một cách dễ dàng và thống nhất.
+      </p>
+      <p>
+<span>Câu 5:</span><br>
+Nếu không sử dụng CSS, các định dạng của trang web phải được thực hiện thông qua việc thiết lập các thuộc tính cho từng phần tử HTML. Điều này đòi hỏi thời gian và công sức để định dạng từng phần tử một và có thể dẫn đến việc không thống nhất trong cách định dạng.
+      </p>
+      <p>
+<span>Câu 6:</span><br>
+Sử dụng CSS có những ưu điểm sau:<br>
+- Tách biệt giữa nội dung (HTML) và mẫu định dạng (CSS), giúp quản lý và bảo trì trang web dễ dàng hơn.<br>
+- Mã CSS có thể viết một lần và áp dụng cho nhiều phần tử HTML, giúp tiết kiệm thời gian và công sức.<br>
+- CSS cho phép tạo ra các mẫu định dạng độc lập, có thể áp dụng cho nhiều trang web hoặc toàn bộ website.<br>
+- CSS hỗ trợ chọn lọc phần tử, kết hợp và kế thừa định dạng, giúp định dạng linh hoạt và mạnh mẽ hơn.<br>
+- Cho phép tạo layout phức tạp, hiệu ứng, điều chỉnh kích thước và vị trí phần tử.<br>
+- Hỗ trợ hiển thị tối ưu trên nhiều thiết bị như máy tính, điện thoại di động và máy in.
+      </p>
+      <p>
+<span>Câu 7:</span><br>
+Để thiết lập tất cả các đoạn văn bản của trang web có màu xanh (blue) bằng CSS, bạn có thể sử dụng một trong các cách sau:<br>
+- CSS nội tuyến (Inline CSS).<br>
+- CSS trong (Internal CSS).<br>
+- CSS ngoài (External CSS).
+      </p>
+      <p>
+<span>Câu 8:</span><br>
+Khẳng định "Ngôn ngữ định dạng CSS chính là ngôn ngữ HTML" là sai. Ngôn ngữ định dạng CSS (Cascading Style Sheets) và ngôn ngữ HTML (Hypertext Markup Language) là hai ngôn ngữ khác nhau và có mục đích sử dụng khác nhau trong việc xây dựng trang web. HTML định nghĩa cấu trúc và nội dung, trong khi CSS định dạng và trình bày các phần tử HTML.
+      </p>
+<h2>Gửi câu hỏi</h2>
+    <form>
+        <input type="text" placeholder="Họ và tên">
+        <input type="text" placeholder="Trường">
+        <textarea rows="4" placeholder="Câu hỏi"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <footer>
+        <a href="index.html">← Quay về trang chủ</a>
+    </footer>
+</main>
+
+</body>
+</html>
+

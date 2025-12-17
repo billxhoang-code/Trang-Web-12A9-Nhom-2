@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bài 11: Chèn tệp tin đa phương tiện và khung nội tuyến vào trang web</h1>
+</header>
+
+<main>
+    <h2>Lý thuyết bài học</h2>
+    <h3>Qua bài học này, học sinh sẽ biết cách chèn hình ảnh, âm thanh, video và khung nội tuyến vào trang web để làm cho trang web sinh động hơn. Hãy theo dõi video này: </h3>
+
+    <iframe src="https://www.youtube.com/embed/XK4bpa54TKI"allowfullscreen></iframe>
+    
+    <h2>Bài tập ôn luyện</h2>
+    <p>
+Câu 1: Để chèn tệp âm thanh vào trang web, em sử dụng thẻ HTML nào?<br>
+A. &lt;sound&gt;.<br>
+B. &lt;music&gt;.<br>
+C. &lt;audio&gt;.<br>
+D. &lt;video&gt;.<br><br>
+
+Câu 2: Trong trường hợp có nhiều video hoặc nhiều tệp âm thanh tương ứng với các định dạng khác nhau, em có thể sử dụng thẻ HTML nào để chỉ định các loại định dạng khác nhau?<br>
+A. type.<br>
+B. source.<br>
+C. control.<br>
+D. form.<br><br>
+
+Câu 3: Em sử dụng thẻ HTML nào để tạo khung nội tuyến?<br>
+A. &lt;frame&gt;.<br>
+B. &lt;oframe&gt;.<br>
+C. &lt;aframe&gt;.<br>
+D. &lt;iframe&gt;.<br><br>
+
+Câu 4: Để trình duyệt chạy video ngay khi hiển thị, em cần sử dụng thuộc tính nào cho thẻ &lt;video&gt;?<br>
+A. autoplay.<br>
+B. controls.<br>
+C. poster.<br>
+D. active.<br><br>
+
+Câu 5: Cho ảnh có kích thước gốc là 960 × 750 pixel. Chèn ảnh vào trang web bằng câu lệnh:<br>
+&lt;img src="images/daisy.png" alt="Daisy" width="800"&gt;<br>
+Hỏi ảnh trong trang web có kích thước bao nhiêu?<br>
+A. 800 × 750 pixel.<br>
+B. 800 × 590 pixel.<br>
+C. 800 × 625 pixel.<br>
+D. 800 × 675 pixel.<br><br>
+
+Câu 6: Phương án nào sau đây là định dạng tệp ảnh đồ hoạ vectơ?<br>
+A. TIFF.<br>
+B. GIF.<br>
+C. EPS.<br>
+D. JPEG.<br><br>
+
+Câu 7: Thuộc tính nào của thẻ &lt;img&gt; là bắt buộc?<br>
+A. src.<br>
+B. url.<br>
+C. sizes.<br>
+D. alt.<br><br>
+
+Câu 8: Khi thiết lập kích thước cho ảnh bằng các thuộc tính width, height, kích thước hiển thị ảnh sẽ được tính bằng đơn vị gì?<br>
+A. in.<br>
+B. mm.<br>
+C. rem.<br>
+D. px.<br><br>
+
+Câu 9: Phương án nào sau đây là một định dạng tệp video?<br>
+A. wav.<br>
+B. webm.<br>
+C. ogg.<br>
+D. flac.<br><br>
+
+Câu 10: Thẻ &lt;audio&gt; không có thuộc tính nào sau đây?<br>
+A. preload.<br>
+B. width.<br>
+C. muted.<br>
+D. autoplay.<br><br>
+
+Tự luận:<br><br>
+
+Câu 1: Viết các câu lệnh để tạo hai khung nội tuyến có kích thước bằng nhau, hiển thị song song (theo phương ngang) trên trang web.<br><br>
+
+Câu 2: Chèn thêm một số ảnh của mình vào trang web giới thiệu bản thân (em đã tạo ở phần luyện tập, Bài 10).
+    </p>
+    <iframe src="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro"></iframe><br>
+    <h2>Trả lời:</h2><br>
+     <h3>Trắc nghiệm</h3>
+        <p>1C 2B 3D 4A 5C 6C 7A 8D 9B 10B</p>
+     <h3>Tự luận:</h3>
+        <p>
+<span>Câu 1:</span><br>
+&lt;iframe src="trang1.html" width="45%" height="300"&gt;<br>
+&lt;/iframe&gt;<br>
+&lt;iframe src="trang2.html" width="45%" height="300"&gt;<br>
+&lt;/iframe&gt;<br><br>
+
+<span>Câu 2:</span><br>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br>
+&lt;head&gt;<br>
+&lt;meta charset="UTF-8"&gt;<br>
+&lt;title&gt;Giới thiệu bản thân&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Giới thiệu bản thân&lt;/h1&gt;<br>
+&lt;p&gt;Xin chào! Tôi là [Tên của bạn], đây là một trang web giới thiệu về bản thân tôi.&lt;/p&gt;<br>
+&lt;!-- Chèn ảnh của bạn --&gt;<br>
+&lt;h2&gt;Ảnh của tôi&lt;/h2&gt;<br>
+&lt;img src="path_to_your_image/image1.jpg" alt="Ảnh của bạn"&gt;<br>
+&lt;img src="path_to_your_image/image2.jpg" alt="Ảnh của bạn"&gt;<br>
+&lt;img src="path_to_your_image/image3.jpg" alt="Ảnh của bạn"&gt;<br>
+&lt;!-- Bạn cùng lớp --&gt;<br>
+&lt;h2&gt;Bạn cùng lớp&lt;/h2&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href="https://www.facebook.com/friend1" target="_blank"&gt;Facebook của Bạn 1&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href="https://www.facebook.com/friend2" target="_blank"&gt;Facebook của Bạn 2&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href="https://www.facebook.com/friend3" target="_blank"&gt;Facebook của Bạn 3&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;p&gt;Cảm ơn bạn đã ghé thăm!&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </p>
+    <h2>Gửi câu hỏi</h2>
+    <form>
+        <input type="text" placeholder="Họ và tên">
+        <input type="text" placeholder="Trường">
+        <textarea rows="4" placeholder="Câu hỏi"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <footer>
+        <a href="index.html">← Quay về trang chủ</a>
+    </footer>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bài 10: Tạo liên kết</h1>
+</header>
+
+<main>
+    <h2>Lý thuyết bài học</h2>
+    <h3>Bài học giúp học sinh hiểu và biết cách tạo các liên kết giữa các trang web hoặc đến các tài nguyên khác, giúp việc truy cập thông tin thuận tiện hơn. Để rõ hơn, các bạn hãy theo dõi bài giảng sau: </h3>
+
+    <iframe src="https://www.youtube.com/embed/NUAvCm4Ig4Q"allowfullscreen></iframe>
+    
+    <h2>Bài tập ôn luyện</h2>
+    <p>
+<span>Câu 1:</span> <b>Viết đoạn mã để tạo liên kết quay về trang chủ CLB.html trong trang thong_tin.html (giả sử hai tệp này nằm cùng thư mục).</b><br>
+<b>Huớng dẫn:</b><br>
+Để tạo liên kết quay về trang chủ CLB.html từ trang thong_tin.html (khi chúng ở cùng thư mục), ta chỉ cần sử dụng đường dẫn tương đối là tên tệp. Đoạn mã có thể đặt ở cuối trang hoặc một vị trí phù hợp. Để căn lề phải, có thể dùng thẻ &lt;p&gt; với thuộc tính align.<br><br>
+<span>Câu 2:</span><b>Viết một trang web giới thiệu bản thân, trong đó để ít nhất ba liên kết tới trang web (có thể là Facebook) của ba bạn cùng lớp.</b><br>
+<b>Hướng dẫn:</b><br>
+Để tạo một trang web giới thiệu bản thân với liên kết đến Facebook của bạn bè, chúng ta cần sử dụng đường dẫn tuyệt đối đến trang cá nhân của họ.<br><br>
+<span>Vận dụng</span><br>
+<b>Viết thêm các đoạn giới thiệu (địa điểm, số thành viên, thành tích, phí hội viên, điện thoại liên hệ) cho từng câu lạc bộ ở dưới bảng “Lịch hoạt động các CLB Thể thao” rồi đặt liên kết từ tên câu lạc bộ trong bảng đến đoạn giới thiệu tương ứng.</b><br>
+Để thực hiện yêu cầu này, chúng ta sẽ kết hợp việc tạo liên kết trong cùng một trang và sửa đổi bảng đã có.<br>
+
+<b>Các bước thực hiện:</b><br><br>
+
+Thêm các đoạn giới thiệu: Bên dưới thẻ bảng, thêm các đoạn văn bản giới thiệu cho mỗi câu lạc bộ. Mỗi đoạn giới thiệu nên được đặt trong một cặp thẻ như &lt;p&gt; hoặc &lt;div&gt; và phải có thuộc tính id duy nhất.<br>
+Ví dụ:<br>
+&lt;div id="clb-bongda"&gt;<br>
+&lt;h2&gt;CLB Bóng đá&lt;/h2&gt;<br>
+&lt;p&gt;Địa điểm: Sân vận động trường...&lt;/p&gt;<br>
+&lt;/div&gt;<br><br>
+
+Sửa đổi bảng: Trong bảng “Lịch hoạt động các CLB Thể thao”, tìm các ô chứa tên câu lạc bộ.<br>
+Ví dụ ban đầu:<br>
+&lt;td&gt;Bóng đá&lt;/td&gt;<br><br>
+
+Chèn liên kết: Bọc tên câu lạc bộ trong thẻ &lt;a&gt; và đặt href trỏ đến id tương ứng.<br>
+Sửa lại:<br>
+&lt;td&gt;&lt;a href="#clb-bongda"&gt;Bóng đá&lt;/a&gt;&lt;/td&gt;<br><br>
+    </p>
+    <iframe src="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro"></iframe><br>
+    <h2>Trả lời:</h2>
+    <p>
+<span>Câu 1:</span><br>
+&lt;p align="right"&gt;&lt;a href="CLB.html"&gt;Quay lại phần giới thiệu&lt;/a&gt;&lt;/p&gt;<br><br>
+
+<span>Câu 2:</span><br>
+Các bước thực hiện:<br>
+Tạo một tệp HTML cơ bản với các thẻ &lt;html&gt;, &lt;head&gt;, &lt;body&gt;.<br>
+Trong phần &lt;body&gt;, viết vài dòng giới thiệu về bản thân.<br>
+Tạo một danh sách không có thứ tự &lt;ul&gt; để liệt kê tên các bạn.<br>
+Với mỗi mục &lt;li&gt;, đặt tên bạn vào trong một thẻ &lt;a&gt;.<br>
+Sao chép đường dẫn tuyệt đối đến trang Facebook của mỗi bạn và dán vào thuộc tính href tương ứng.<br><br>
+Tham khảo:<br>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Giới thiệu bản thân&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Xin chào, mình là [Tên của em]&lt;/h1&gt;<br>
+&lt;p&gt;Mình là học sinh lớp ... Rất vui được làm quen với các bạn!&lt;/p&gt;<br>
+&lt;h3&gt;Danh sách một vài người bạn của mình:&lt;/h3&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;&lt;a href="https://www.facebook.com/nguyenvana"&gt;Nguyễn Văn A&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href="https://www.facebook.com/tranvanb"&gt;Trần Văn B&lt;/a&gt;&lt;/li&gt;<br>
+&lt;li&gt;&lt;a href="https://www.facebook.com/levanc"&gt;Lê Văn C&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br><br>
+
+<span>Vận dụng</span><br>
+lt;table id="CLBTT" border="1"&gt;<br>
+&lt;caption&gt;Lịch hoạt động các CLB Thể thao&lt;/caption&gt;<br>
+...<br>
+&lt;tr&gt;<br>
+&lt;td&gt;Chủ Nhật&lt;/td&gt;<br>
+&lt;td&gt;&lt;a href="#clb-bongda"&gt;Bóng đá&lt;/a&gt;&lt;/td&gt;<br>
+&lt;td&gt;...&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+...<br>
+&lt;/table&gt;<br><br>
+
+&lt;hr&gt;<br><br>
+
+&lt;div id="clb-bongda"&gt;<br>
+&lt;h3&gt;Thông tin chi tiết CLB Bóng đá&lt;/h3&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;Địa điểm: Sân vận động trường&lt;/li&gt;<br>
+&lt;li&gt;Số thành viên: 40&lt;/li&gt;<br>
+&lt;li&gt;Thành tích: Vô địch giải Hội khỏe Phù Đổng cấp trường&lt;/li&gt;<br>
+&lt;li&gt;Liên hệ: Thầy Nam - 090xxxxxxx&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/div&gt;<br><br>
+
+&lt;div id="clb-boi-loi"&gt;<br>
+&lt;h3&gt;Thông tin chi tiết CLB Bơi lội&lt;/h3&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;Địa điểm: Bể bơi thành phố&lt;/li&gt;<br>
+&lt;li&gt;Số thành viên: 25&lt;/li&gt;<br>
+&lt;li&gt;Thành tích: 03 Huy chương Vàng cấp thành phố&lt;/li&gt;<br>
+&lt;li&gt;Liên hệ: Cô An - 091xxxxxxx&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/div&gt;
+</p>
+<form>
+        <input type="text" placeholder="Họ và tên">
+        <input type="text" placeholder="Trường">
+        <textarea rows="4" placeholder="Câu hỏi"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <footer>
+        <a href="index.html">← Quay về trang chủ</a>
+    </footer>
+</main>
+
+</body>
+</html>

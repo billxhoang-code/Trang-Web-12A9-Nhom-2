@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 17</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bài 17: Các mức ưu tiên của bộ chọn </h1>
+</header>
+
+<main>
+    <h2>Lý thuyết bài học</h2>
+    <h3>Trong bài này, học sinh sẽ hiểu được các mức ưu tiên của bộ chọn CSS và cách áp dụng chúng để định dạng trang web chính xác hơn. Hãy xem video sau: </h3>
+
+    <iframe src="https://www.youtube.com/embed/pE5krdeyg_U"allowfullscreen></iframe>
+    
+    <h2>Bài tập ôn luyện</h2>
+    <p>
+Câu 1: Giả sử có hai định dạng CSS sau: #p123 + p {color: red;} và h2#p123 + p {color: red;}. Điều gì sẽ xảy ra khi áp dụng?<br>
+A. Cả hai định dạng đều áp dụng màu đỏ cho p sau phần tử id="p123".<br>
+B. Cả hai định dạng đều không hợp lệ.<br>
+C. Định dạng thứ hai sẽ ghi đè định dạng thứ nhất.<br>
+D. Định dạng thứ nhất có ưu tiên cao hơn.<br><br>
+
+Câu 2: Trong đoạn mã HTML có một phần tử p có cả tên riêng (tên người, tên tổ chức) được bổ sung định dạng chữ đậm và in nghiêng. Cú pháp bộ chọn nào sau đây sẽ áp dụng đúng cho phần tử p đó?<br>
+A. p#id {font-weight: bold; font-style: italic;}.<br>
+B. p.class-name {font-weight: bold; font-style: italic;}.<br>
+C. p[name] {font-weight: bold; font-style: italic;}.<br>
+D. p.test {font-weight: bold; font-style: italic;}.<br><br>
+
+Câu 3: Khái niệm “bộ chọn pseudo-class” (pseudo-class selector) trong CSS dùng để làm gì?<br>
+A. Chọn phần tử dựa trên tên thẻ HTML.<br>
+B. Chọn phần tử dựa trên mã định danh (id).<br>
+C. Chọn phần tử dựa trên trạng thái đặc biệt (ví dụ: link, visited, hover).<br>
+D. Chọn phần tử dựa trên lớp (class).<br><br>
+
+Câu 4: Bộ chọn ::first-line trong CSS dùng để làm gì?<br>
+A. Định dạng toàn bộ dòng đầu tiên của một phần tử.<br>
+B. Định dạng kí tự đầu tiên của một phần tử.<br>
+C. Định dạng dòng cuối cùng của một phần tử.<br>
+D. Định dạng dòng đầu tiên của phần tử khối.<br><br>
+
+Câu 5: Bộ chọn ::first-letter trong CSS dùng để làm gì?<br>
+A. Định dạng toàn bộ dòng đầu tiên của một phần tử.<br>
+B. Định dạng kí tự đầu tiên của phần tử đó.<br>
+C. Định dạng kí tự đầu tiên của từ đầu tiên trong một phần tử.<br>
+D. Định dạng chữ cái đầu tiên của mỗi từ.<br><br>
+
+Câu 6: Bộ chọn ::selection trong CSS dùng để làm gì?<br>
+A. Định dạng văn bản đang được di chuyển.<br>
+B. Định dạng phần văn bản người dùng chọn.<br>
+C. Định dạng văn bản được chọn bởi chuột.<br>
+D. Định dạng văn bản bị lỗi.<br><br>
+
+Câu 7: Từ khóa !important trong CSS có mức độ ưu tiên như thế nào so với các quy định khác?<br>
+A. Thấp nhất.<br>
+B. Cao nhất, ghi đè lên các quy định khác.<br>
+C. Trung bình.<br>
+D. Tùy thuộc vị trí trong mã nguồn.<br><br>
+
+Câu 8: CSS được áp dụng cho phần tử HTML theo nguyên tắc nào sau đây?<br>
+A. Chỉ theo thứ tự mã nguồn.<br>
+B. Chỉ theo tính kế thừa.<br>
+C. Chỉ theo mức độ ưu tiên của bộ chọn.<br>
+D. Kết hợp kế thừa và quy định thứ tự ưu tiên.<br><br>
+
+Câu 9: Khi có nhiều mẫu định dạng xung đột cho cùng một phần tử HTML, trình duyệt sẽ ưu tiên áp dụng mẫu nào?<br>
+A. Mẫu được viết đầu tiên.<br>
+B. Mẫu có ít quy định nhất.<br>
+C. Mẫu có mức độ ưu tiên.<br>
+D. Mẫu có nhiều quy định nhất.<br><br>
+
+Câu 10: Thứ tự ưu tiên của các kiểu thiết lập CSS (từ cao đến thấp) là gì?<br>
+A. CSS ngoài &gt; CSS nhúng &gt; CSS nội tuyến.<br>
+B. CSS nội tuyến &gt; CSS nhúng &gt; CSS ngoài.<br>
+C. CSS nhúng &gt; CSS nội tuyến &gt; CSS ngoài.<br>
+D. CSS nội tuyến &gt; CSS ngoài &gt; CSS nhúng.<br><br>
+
+Câu 11: Bộ chọn dựa trên mã định danh (ID selector) có điểm trọng số là bao nhiêu?<br>
+A. 10.<br>
+B. 1000.<br>
+C. 100.<br>
+D. 1.<br><br>
+
+Câu 12: Bộ chọn dựa trên lớp (class selector) có điểm trọng số là bao nhiêu?<br>
+A. 1.<br>
+B. 100.<br>
+C. 1000.<br>
+D. 10.<br><br>
+
+Câu 13: Bộ chọn dựa trên phần tử (element selector) hoặc pseudo-element có điểm trọng số là bao nhiêu?<br>
+A. 10.<br>
+B. 1.<br>
+C. 100.<br>
+D. 1000.<br><br>
+
+Câu 14: Giá trị trọng số của thuộc tính !important được xem là bao nhiêu?<br>
+A. 0.<br>
+B. Vượt lên trên mọi giá trị trọng số khác.<br>
+C. 100.<br>
+D. 1000.<br><br>
+
+Câu 15: Trong đoạn mã CSS p &gt; em {color: red;} và HTML &lt;p&gt;Đây là &lt;em&gt;văn bản&lt;/em&gt;&lt;/p&gt;, màu chữ của “văn bản” sẽ là gì?<br>
+A. Mặc định (thường là đen).<br>
+B. Xanh dương.<br>
+C. Đỏ.<br>
+D. Xám.<br><br>
+
+Câu 16: Trong đoạn mã CSS a:link {color: blue;} a:visited {color: gray;} a:hover {color: green;}, nếu một liên kết đã được người dùng truy cập, màu sắc của liên kết đó sẽ là gì?<br>
+A. Xanh dương.<br>
+B. Xanh lá cây.<br>
+C. Đỏ.<br>
+D. Xám.<br><br>
+
+Câu 17: Trong đoạn mã HTML &lt;h1&gt;Test CSS&lt;/h1&gt; và CSS .highlight {color: blue;}, bộ chọn .highlight có điểm trọng số là bao nhiêu?<br>
+A. 10.<br>
+B. 1.<br>
+C. 100.<br>
+D. 1000.
+    </p>
+    <h2>Trả lời:</h2>
+    <h3>Trắc nghiệm:</h3>
+    <p>1A 2B 3C 4D 5B 6B 7B 8D 9C 10B 11C 12D 13B 14B 15C 16D 17A </p>
+    <h2>Gửi câu hỏi</h2>
+    <form>
+        <label for="1">Họ và Tên</label>
+        <input id="1" type="text">
+        <input type="text" placeholder="Trường">
+        <textarea rows="4" placeholder="Câu hỏi"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <footer>
+        <a href="index.html">← Quay về trang chủ</a>
+    </footer>
+</main>
+
+</body>
+</html>
+
